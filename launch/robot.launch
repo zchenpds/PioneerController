@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="rosaria" type="RosAria" name="pioneer">
+    <param name="_port" value="/dev/ttyUSB0"/>
+  </node>
+</launch>

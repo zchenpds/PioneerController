@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="rosaria" type="RosAria" name="pioneer">
+    <param name="_port" value="/dev/ttyUSB0"/>
+    <remap from="pioneer/cmd_vel" to="/cmd_vel"/>
+  </node>
+
+  <node pkg="rosserial_server" type="socket_node" name="rosserial_server" output="screen"/>
+</launch>
