@@ -1,6 +1,6 @@
 <launch>
   <node pkg="rosaria" type="RosAria" name="pioneer">
-    <param name="_port" value="/dev/ttyUSB0"/>
+    <param name="port" value="/dev/ttyUSB0"/>
     <remap from="pioneer/cmd_vel" to="/cmd_vel"/>
   </node>
 

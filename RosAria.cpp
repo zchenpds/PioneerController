@@ -376,6 +376,8 @@ int RosAriaNode::Setup()
   {
     args->add("-robotPort %s", serial_port.c_str()); // pass robot's serial port to Aria
   }
+  
+  args->add("-laserPort %s", "/dev/ttyUSB1");
 
   // if a baud rate was specified in baud parameter
   if(serial_baud != 0)
